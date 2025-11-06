@@ -1,0 +1,472 @@
+/* i'm gonna give a brief explanation on every attribute that i found on the 
+internet */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inconsolata", monospace;
+    font-optical-sizing: auto; /* font is flexible to the user */
+    font-weight: 400;
+    color: black;
+    background: white;
+}
+
+a {
+    color: inherit; /* parent element's color */
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.cont {
+    max-width: 1100px;
+    margin: 0 auto; /* l and r margins depend on the parent */
+    padding: 0 16px
+}
+
+.navigation {
+    background: black;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-inner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+}
+
+.brand {
+    font-weight: bold;
+}
+
+.links {
+    margin-left: auto;
+    display: flex;
+    gap: 14px;
+}
+
+.links a {
+    opacity: 0.9;
+}
+
+.links a:hover {
+    opacity: 1;
+}
+
+.menu-btn {
+    display: none;
+    margin-left: auto;
+    padding: 6px 10px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.menu-list {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    display: none;
+}
+
+.nav-toggle {
+    position: absolute; /* i want it to be hidden for the user for now */
+    opacity: 0;
+}
+
+.hero {
+    background: #b875ff;
+    color: black;
+    padding: 50px 0 40px;
+    text-align: left;
+}
+
+.hero .bg-text {
+    font-size: 64px;
+    font-weight: 900;
+    margin: 0 0 6px; /* t lr b */
+    letter-spacing: 2px;
+    opacity: 0.25;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin: 6px 0;
+}
+
+.hero p {
+    margin: 6px 0 0;
+    font-weight: bold;
+}
+
+main section {
+    padding: 36px 0;
+}
+
+.table-title {
+    font-size: 28px;
+    margin: 0 0 12px;
+}
+
+.band {
+    background: black;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* main axis positioning */
+    gap: 16px;
+    margin: 16px auto;
+}
+
+.pages-section {
+    padding-top: 12px;
+    padding-bottom: 36px;
+}
+
+.intro-section {
+    padding-top: 24px;
+    padding-bottom: 12px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #ffe08a;
+    overflow: hidden; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* filling .avatar's whole box, without changing the ration */
+    display: block;
+}
+
+.bubble {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 14px 18px;
+    border-radius: 10px;
+    max-width: 650px;
+    width: 100%;
+}
+
+.table-wrap {
+    overflow-x: auto; /* u can scroll into view an element that overflows
+    either on the left or right side */
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* borders inbetween cells merge into a single one */
+    min-width: 620px;
+}
+
+th, td {
+    padding: 10px;
+    border-top: 1px solid white;
+    text-align: left;
+}
+
+th {
+    background: white;
+}
+
+tr:first-child th { /* self-explanatory */
+    border-top: 0;
+}
+
+.book {
+    background: #ffe08a;
+    border: 2px solid #222;
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.book-row {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start; /* placed at the beginning of the container */
+}
+
+main section {
+    padding: 36px;
+}
+
+.book-cover {
+    width: 200px;
+    background: #fff;
+    border: 2px solid #222;
+    border-radius: 8px;
+    display: block;
+    overflow: hidden;
+}
+
+.book-cover img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.btn {
+    padding: 8px 12px;
+    border: 2px solid #222;
+    border-radius: 8px;
+    background: transparent;
+    cursor: pointer;
+    font: inherit; 
+}
+
+.btn.primary {
+    background: #c7ffd7;
+}
+
+.moments-2025 {
+    background: #e7d4ff;
+    border: 1px solid #cbb9ff;
+}
+
+.moment-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    display: flex; 
+    gap: 10px;
+    align-items: center;
+}
+
+.year {
+    background: #111;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.tape {
+    text-align: center;
+    background: #ffd86c;
+    padding: 8px 0;
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns and each one takes one
+    fraction of the set width */
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.thumb {
+    height: 120px;
+    background: black;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 18px;
+    text-transform: uppercase; /* self-explanatory, i just didn't know it could
+    be done by css manually */
+    color: white;
+}
+
+.card .text {
+    padding: 10px;
+}
+
+.gallery-img {
+    height: 160px;
+    overflow: hidden;
+}
+
+.gallery-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* keep the proportions even if it crops a part of the pic */
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap; /* break into multiple rows if needed */
+    gap: 10px;
+    margin-top: 12px;
+}
+
+.subjects span {
+    border: 1px dashed #bbb;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.form {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 140px;
+}
+
+.send {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #b9ffd1;
+    border: 1px solid #0a0;
+    border-radius: 6px;
+    cursor: pointer;
+    font: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #555;
+}
+
+@media (max-width: 900px) {
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bubble {
+        text-align: left;
+        margin: 0 auto;
+        max-width: 90%;
+    }
+
+    .avatar {
+        margin: 0 auto 12px;
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .nav-toggle:checked + .menu-btn + .menu-list {
+    /* as said previously, a friend helped me w that */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .links {
+        display: none;
+    }
+
+    .menu-btn {
+        display: inline-block;
+    }
+
+    .hero .bg-text {
+        font-size: 42px;
+    }
+
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .book-row {
+        flex-direction: column;
+    }
+
+    .book-cover {
+        width: 100%;
+        max-width: 260px;
+        margin: 0 auto 12px;
+    }
+
+    .avatar {
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .nav-menu {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-toggle:checked + .menu-btn + .menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px 0;
+        margin: 11px;
+    }
+}

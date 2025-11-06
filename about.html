@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- the whole site is inspired by Rubens Cantuni's page on onepagelove.com -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About Me - Viktoria Milcheva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <!-- https://stackoverflow.com/questions/57936472/adding-custom-fonts-in-css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navigation">
+        <div class="cont nav-inner">
+            <div class="brand">Viktoria Milcheva</div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="cv.html">CV</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="nav-menu">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="menu-btn">Menu</label>
+                <!-- i asked one of my friends from back home how to make the
+                menu-btn work, because at first i could only get it to open while
+                active (while a tester is holding it)-->
+                <div id="menu" class="menu-list">
+                    <a href="index.html">Home</a>
+                    <a href="cv.html">CV</a>
+                    <a href="gallery.html">Gallery</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <header class="hero">
+    <!-- https://www.youtube.com/watch?v=fs923Mu5EXY -->
+        <div class="cont">
+            <div class="bg-text"><i>ABOUT</i></div>
+            <h1>Get to know me</h1>
+            <p>Informal facts and what I enjoy.</p>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="cont">
+                <div class="intro">
+                    <div class="avatar">
+                        <img src="images/avatar.jpeg" alt="Photo of Me">
+                    </div>
+                    <div class="bubble">
+                        I'm a student at IMC Krems. I am in my first semester of studying
+                        Informatics. I enjoy reading, journaling and listening to music.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="book">
+            <div class="cont">
+                <div class="book">
+                    <div class="book-row">
+                        <div class="book-cover">
+                            <img src="images/bookCover.webp" alt="Surrounded by Idiots">
+                        </div>
+                        <div>
+                            <h2 class="section-title">Current Read</h2>
+                            <p>
+                                I'm currently reading a book about personality types and
+                                communication. It explains how people react differently,
+                                why some are more direct and others more emotional, and
+                                how to adapt your own style when you meet them.
+                            </p>
+                            <ul>
+                                <li>Understanding peoples' behavior</li>
+                                <li>Communicating better in a new country</li>
+                                <li>Practical tips for any situations</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="moments-2025" id="highlights">
+            <div class="cont">
+                <h2 class="table-title">Small Highlights</h2>
+
+                <div class="moment-item">
+                    <span class="year">2025</span>
+                    <!-- flexible, short phrase => span -->
+                    Moved abroad to study at IMC Krems and started my international student life.
+                </div>
+                <div class="moment-item">
+                    <span class="year">2025</span>
+                    Graduated from high school.
+                </div>
+                <div class="moment-item">
+                    <span class="year">2025</span>
+                    Graduated the IT Step Academy and got my diploma from the course
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="cont"> 2025 Viktoria Milcheva</div>
+    </footer>
+</body>
+
+</html>
